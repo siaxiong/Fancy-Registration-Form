@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="center">
+            <form action="" class="registration-form">
+                <div class="form__header">
+                    <h2>Registration Form</h2>
+                </div>
+                <div class="form__fields">
+                    <div class="form__name">
+                        <div class="form__first-name">
+                            <label for="first__name" class="form__input-label">First Name</label>
+                            <input type="text" id="first__name form__input" class="form__first-name-input form__input">
+                            <small>First name is required</small>
+                        </div>
+                        <div class="form__last-name">
+                            <label for="last__name" class="form__input-label">Last Name</label>
+                            <input type="text" id="last__name" class="form__last-name-input form__input">
+                            <small>Last name is required</small>
+                        </div>
+                    </div>
+                    <div class="form__birth">
+                        <div class="form__birthday">
+                            <label for="birthday" class="form__input-label">Birthday</label>
+                            <input type="text" id="birthday" class="form__birthday-input form__input">
+                            <small>Birthday is required</small>
+                        </div>
+                        <div class="form__gender">
+                            <label for="" class="gender__label form__input-label">Gender</label>
+                            <div class="form__radio-box">
+                                <div class="form__radio-male">
+                                    <input type="radio" id="gender-male" class="form__gender-male" name="gender">
+                                    <label for="gender-male">Male</label>
+                                </div>
+                                <div class="form__radio-female">
+                                    <input type="radio" id="gender-female" class="form__gender-female" name="gender">
+                                    <label for="gender-female">Female</label>
+                                </div>
+                            </div>
+                            <small>Gender is required</small>
+                        </div>
+                    </div>
+                    <div class="form__contact">
+                        <div class="form__email">
+                            <label for="email" class="form__input-label">Email</label>
+                            <input type="txt" id="email" class="form__email-input form__input">
+                            <small>Email is required</small>
+                        </div>
+                        <div class="form__phone-number">
+                            <label for="phone-number" class="form__input-label">Phone Number</label>
+                            <input type="text" id="phone-number" class="form__phone-input form__input">
+                            <small>Phone number is required</small>
+                        </div>
+                    </div>
+                    <div class="form__subject">
+                        <label for="select-subject" class="form__subject-label form__input-label">Subject</label>
+                        <select name="subject" id="select-subject" class="select-subject">
+                            <option value="" selected disabled hidden>Choose option</option>
+                            <option value="Subject 1">Subject 1</option>
+                            <option value="Subject 2">Subject 2</option>
+                            <option value="Subject 3">Subject 3</option>
+                        </select>
+                        <small>Subject is required</small>
+                    </div>
+                    <div class="form__submit">
+                        <button type="submit" class="form__submit-button">Submit</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <script src="myJS.js"></script>
+
+
+</body>
+
+</html>

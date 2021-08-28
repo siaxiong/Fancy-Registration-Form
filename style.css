@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(to top right, #fc2c77 0%, #6c4079 100%);
+}
+
+.parent {
+  position: relative;
+  height: 100vh;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 680px;
+  width: 100%;
+  height: 670px;
+}
+
+.registration-form {
+  font-size: 1rem;
+  color: #555;
+  font-family: "Poppins", sans-serif;
+  padding: 2.5em 4em;
+  background-color: white;
+  /* max-width: 680px;
+  width: 100%;
+  height: 670px; */
+  margin: 1em auto;
+  border-radius: 0.5em;
+}
+
+.form__header {
+  font-family: inherit;
+  padding: 1em 0;
+  /* border: 1px solid black; */
+}
+
+.form__fields {
+  padding: 1em 0;
+  /* border: 1px solid blue; */
+}
+
+.form__fields > * {
+  margin: 0 0 0.5em 0;
+}
+
+small {
+  visibility: hidden;
+  color: red;
+  display: block;
+  margin: 0.2em 0;
+}
+
+small.required {
+  visibility: visible;
+}
+
+.form__name {
+  display: flex;
+  /*need to media query to use this because the 
+        form element is positioned thus out of the document normal flow*/
+}
+
+.form__first-name,
+.form__last-name {
+  flex: 1;
+}
+
+.form__input-label {
+  display: block;
+  /*this cause the input left border to dissapear*/
+}
+
+.form__first-name-input,
+.form__last-name-input,
+.form__birthday-input,
+.form__email-input,
+.form__phone-input {
+  display: block;
+  width: 90%;
+  /* width: 20em; */
+  /* flex: 1; */
+  padding: 0.8em 0.5em;
+  border: none;
+  background-color: #fafafa;
+}
+
+.form__input-label {
+  margin: 0.5em 0;
+}
+
+label {
+  display: block;
+}
+
+.form__input {
+  border-radius: 0.5em;
+}
+
+.form__input:focus {
+  /* outline: 1px solid #3868cd; */
+  outline: none;
+  caret-color: #3868cd;
+}
+
+.form__birth {
+  display: flex;
+}
+
+.form__birthday,
+.form__gender {
+  flex: 1;
+}
+
+.form__gender {
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form__radio-box {
+  /* border: 1px solid green; */
+  display: flex;
+  padding: 1em 0;
+}
+
+.form__radio-male,
+.form__radio-female {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+.form__gender-male,
+.form__gender-female {
+  margin-right: 0.5em;
+}
+
+.gender__label {
+  display: block;
+}
+
+.form__contact {
+  display: flex;
+}
+
+.form__email,
+.form__phone-number {
+  flex: 1;
+}
+
+.form__subject {
+  margin: 1em 0;
+}
+
+.form__subject-label {
+  display: block;
+}
+
+.select-subject {
+  width: 100%;
+  background-color: #fafafa;
+  border: none;
+  padding: 1em 0.5em;
+  border-radius: 0.5em;
+}
+
+.select-subject:focus {
+  border-radius: 0.5em;
+}
+
+.form__submit-button {
+  color: white;
+  background-color: #4272d7;
+  padding: 1em 3em;
+  border-radius: 0.3em;
+  border: none;
+}
+
+.form__submit-button:hover {
+  background-color: #3868cd;
+}
+
+@media only screen and (max-width: 900px) {
+  .center {
+    width: 95%;
+  }
+  .form__name,
+  .form__birth,
+  .form__contact {
+    flex-wrap: wrap;
+  }
+  .form__first-name,
+  .form__last-name,
+  .form__birthday,
+  .form__gender,
+  .form__email,
+  .form__phone-number {
+    flex: auto;
+  }
+}
